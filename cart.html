@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Toyz</title>
+</head>
+<body>
+    <header class="nav">
+        <div class="left">
+            TOYZ
+        </div>
+        <div class="mid">
+            <a href="index.html" class="link"><div class="item" style="color:#2c0e37;font-size: large;" >HOME</div></a>
+            <a href="about.html" class="link"><div class="item" >ABOUT</div></a>
+            <a href="products.html" class="link"><div class="item" >PRODUCTS</div></a>
+            <a href="contact.html" class="link"><div class="item" >CONTACT</div></a>
+        </div>
+        <div class="right">
+            <button onclick="document.location='cart.html'" class="cart">CART</button>
+        </div>
+    </header>
+
+    <main class="cart-container">
+        <h1>Your Cart</h1>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-summary">
+            <h3>Total: $<span id="cart-total">0</span></h3>
+            <button onclick="clearCart()">Clear Cart</button>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </main>
+
+    <script src="cart.js"></script>
+</body>
+</html>

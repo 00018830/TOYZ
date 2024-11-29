@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!--Landing page-->
+<body>
+
+<!--Company logo, navigation menu, and a call-to-action button-->
+    <header class="nav">
+        <div class="left">
+            TOYZ
+        </div>
+        <div class="mid">
+            <a href="index.html" class="link"><div class="item" >HOME</div></a>
+            <a href="about.html" class="link"><div class="item" >ABOUT</div></a>
+            <a href="products.html" class="link"><div class="item" >PRODUCTS</div></a>
+            <a href="contact.html" class="link"><div class="item" style="color:#2c0e37;font-size: large;">CONTACT</div></a>
+        </div>
+        <div class="right">
+            <button onclick="document.location='cart.html'" class="cart">CART</button>
+        </div>
+    </header>
+
+
+    <section class="contact">
+        <div class="contact-heading">
+            <h2>Get in Touch</h2>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-box">
+                    <div class="contact-text">
+                        <h3>Adress:</h3>
+                        <p>14 Pushkin Street,<br>Taskent, Uzbekistan <br>22500</p>
+                    </div>
+
+                <div class="contact-box">
+                    <div class="contact-text">
+                        <h3>Phone:</h3>
+                        <p>998-12-345-67-89</p>
+                    </div>
+
+                
+                <div class="contact-box">
+                    <div class="contact-text">
+                        <h3>Email:</h3>
+                        <p>wiut2024.id00018830@gmail.com</p>
+                    </div>
+            <h2 class="formsend">Send:</h2>
+            <div class="contact-form">
+                <form id="contactForm" action="contact.html" method="post" onsubmit="return validateForm()">
+                    <div class="inputbox">
+                        <span>Full name</span><br>
+                        <input class="contactinput" id="name" name="name" placeholder="Alex Smith" required>
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Email</span><br>
+                        <input class="contactinput" id="email" placeholder="123@wiut.uz" required>
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Message...</span><br>
+                        <textarea class="contactinput" id="message" required></textarea>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+
+            </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="contact.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h4>About us</h4>
+            <p>Learn more about our mission, vision and values. 
+                <br>We aim to provide the best service in the toy selling sphere</p>
+            <a href="#">Read more</a>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contact us</h4>
+            <p><strong>Address:</strong> 12 Istiqbol, Tashkent, Uzbekistan, 56789</p>
+            <p><strong>Email:</strong> <a href="wiut2024.00018830@gmail.com">wiut2024.00018830@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        </div>
+
+        <div class="footer-social">
+            <h4>Follow us</h4>
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank">Instagram</a><br>
+                <a href="https://instagram.com" target="_blank">Facebook</a><br>
+                <a href="https://instagram.com" target="_blank">Telegram</a><br>
+                <a href="https://instagram.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Website  was  created  to  fulfill  Web  Technology 
+        module requirements and does not represent an actual company or service</p><br>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </div>
+
+</footer>
+</html>
