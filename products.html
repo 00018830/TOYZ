@@ -15,13 +15,16 @@
 
 <header class="nav">
     <div class="left">
-        TOYZ
+        <h3>TOYZ</h3>
     </div>
     <div class="mid">
-        <a href="index.html" class="link"><div class="item" >HOME</div></a>
-        <a href="about.html" class="link"><div class="item" >ABOUT</div></a>
-        <a href="products.html" class="link"><div class="item" style="color:#2c0e37;font-size: large;" >PRODUCTS</div></a>
-        <a href="contact.html" class="link"><div class="item" >CONTACT</div></a>
+        <ul class="navlist">
+            <li><a href="index.html" class="link"><div class="item" >Home</div></a></li>
+            <li><a href="about.html" class="link"><div class="item" >About</div></a></li>
+            <li><a href="products.html" class="link"><div class="item" style="color:#2c0e37;font-size: large;" >Products</div></a></li>
+            <li><a href="contact.html" class="link"><div class="item" >Contact</div></a></li>
+            <li><a href="faq.html" class="link"><div class="item" ><abbr title="Frequently Asked Questions">FAQ</abbr></div></a></li>
+        </ul>
     </div>
     <div class="right">
         <button onclick="document.location='cart.html'" class="cart">CART</button>
@@ -35,26 +38,26 @@
             <input type="text" id="search" placeholder="Search products..." oninput="filterProducts()">
         </div>  
 
-        <div class="filter-group">
+        <datalist class="filter-group">
             <label for="age-group">Age Group:</label>
             <select class="pick" id="age-group">
                 <option class="option" value="all">All</option>
                 <option class="option" value="kids">Kids</option>
                 <option class="option" value="adults">Adults</option>
             </select>
-        </div>
+        </datalist>
 
 
-        <div class="filter-group">
+        <datalist class="filter-group">
             <label for="type">Type:</label>
             <select class="pick" id="type">
                 <option class="option" value="all">All</option>
                 <option class="option" value="toys">Toys</option>
                 <option class="option" value="electronics">Electronics</option>
             </select>
-        </div>
+        </datalist>
 
-        <div class="filter-group">
+        <datalist class="filter-group">
             <label for="price-range">Price Range:</label>
             <select class="pick" id="price-range">
                 <option class="option" value="all">All</option>
@@ -62,7 +65,7 @@
                 <option class="option" value="mid">$50 - $100</option>
                 <option class="option" value="high">Above $100</option>
             </select>
-        </div>
+        </datalist>
     </aside>
 
 

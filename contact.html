@@ -13,13 +13,16 @@
 <!--Company logo, navigation menu, and a call-to-action button-->
     <header class="nav">
         <div class="left">
-            TOYZ
+            <h3>TOYZ</h3>
         </div>
         <div class="mid">
-            <a href="index.html" class="link"><div class="item" >HOME</div></a>
-            <a href="about.html" class="link"><div class="item" >ABOUT</div></a>
-            <a href="products.html" class="link"><div class="item" >PRODUCTS</div></a>
-            <a href="contact.html" class="link"><div class="item" style="color:#2c0e37;font-size: large;">CONTACT</div></a>
+            <ul class="navlist">
+                <li><a href="index.html" class="link"><div class="item" >Home</div></a></li>
+                <li><a href="about.html" class="link"><div class="item" >About</div></a></li>
+                <li><a href="products.html" class="link"><div class="item" >Products</div></a></li>
+                <li><a href="contact.html" class="link"><div class="item" style="color:#2c0e37;font-size: large;">Contact</div></a></li>
+                <li><a href="faq.html" class="link"><div class="item" ><abbr title="Frequently Asked Questions">FAQ</abbr></div></a></li>
+            </ul>
         </div>
         <div class="right">
             <button onclick="document.location='cart.html'" class="cart">CART</button>
@@ -37,7 +40,7 @@
                 <div class="contact-box">
                     <div class="contact-text">
                         <h3>Adress:</h3>
-                        <p>14 Pushkin Street,<br>Taskent, Uzbekistan <br>22500</p>
+                        <br><address>14 Pushkin Street,<br>Taskent, Uzbekistan <br>22500</address><br>
                     </div>
 
                 <div class="contact-box">
@@ -50,8 +53,9 @@
                 <div class="contact-box">
                     <div class="contact-text">
                         <h3>Email:</h3>
-                        <p>wiut2024.id00018830@gmail.com</p>
+                        <p>wiut2024.id00018830@gmail<wbr>.com</p>
                     </div>
+                    
             <h2 class="formsend">Send:</h2>
             <div class="contact-form">
                 <form id="contactForm" action="contact.html" method="post" onsubmit="return validateForm()">
